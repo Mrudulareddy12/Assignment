@@ -1,1 +1,38 @@
+<body bgcolor="grey">
+  <div>
+  <h1>{{title}}</h1>
+  <p style="background-color:aqua;"> {{ display() }}</p>
+  
+  <div>
+    <form [formGroup]="myform" (ngSubmit)="onSubmit()">
+      <br><br><label for="firstname">Firstname</label><br>
+      <input type="text" formControlName="firstname"><br>
+      <label for="firstname">Lastname</label><br>
+      <input type="text" formControlName="lastname"><br>
+      <label for="firstname">Phonenumber</label><br>
+      <input type="text" formControlName="phonenumber"><br>
+      <label for="firstname">city</label><br>
+      <input type="text" formControlName="City"><br>
+      <label for="firstname">State</label><br>
+      <input type="text" formControlName="state"><br>
+      <label for="firstname">Pincode</label><br>
+      <input type="text" formControlName="pincode"><br>
 
+      
+      
+       <br>
+       <br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <br>
+  <br>
+  <button (click)="update()">Update</button>
+  <button (click)="removeItem()">Remove Item</button>
+  <button (click)="removeAll()">Remove all Items</button>
+  
+  
+
+  <router-outlet></router-outlet>
+</div>
+</body>
