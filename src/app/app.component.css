@@ -1,0 +1,16 @@
+
+  
+  button {
+    max-width: 300px;
+  }
+  form {
+    padding-top: 0.5rem;
+  }
+  
+  label {
+    display: block;
+    margin: .5em 0;
+    font-weight: bold;
+  }
+  
+    
